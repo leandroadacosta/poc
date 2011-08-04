@@ -1,0 +1,13 @@
+body {
+  background-color: #CCC;
+  font: 18px Arial;
+  margin: 10px;
+}
+
+@mixin border-radius {
+  border-radius: 5px;
+}
+
+input, textarea {
+  @include border-radius;
+}

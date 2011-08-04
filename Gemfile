@@ -1,10 +1,15 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
+
+# views
 gem 'haml'
+
+# javascript and css
 gem 'sass'
-gem 'coffee-script'
 gem 'headjs-rails'
+gem 'coffee-script'
+gem 'barista'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

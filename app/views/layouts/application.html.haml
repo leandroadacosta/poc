@@ -1,10 +1,13 @@
 !!!
 %html
-	%head
-		%title POC
-		= stylesheet_link_tag 'reset', 'grid'
-		= javascript_include_tag 'head.min'
-		= headjs_include_tag 'jquery.min', 'rails', 'application'
-		= csrf_meta_tag
-	%body
-		= yield
+  %head
+    %title POC
+    = stylesheet_link_tag 'reset', 'grid', 'application'
+    = javascript_include_tag 'head.min'
+    = headjs_include_tag 'jquery.min', 'rails', 'application'
+    = csrf_meta_tag
+  %body
+    .field
+      Menu:
+      = link_to 'Posts', posts_path
+    = yield
