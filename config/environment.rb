@@ -6,3 +6,5 @@ Poc::Application.initialize!
 
 # Sass
 Sass::Plugin.options[:template_location] = 'app/stylesheets'
+
+ActionView::Base.field_error_proc = proc { |html_tag, instance| html_tag }
